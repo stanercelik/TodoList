@@ -20,6 +20,7 @@ struct TodoListApp: App {
                 ListView()
             }
             .environmentObject(listViewModel) // Artık bütün viewlar listViewModel'i kullanabilir.
+            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }
